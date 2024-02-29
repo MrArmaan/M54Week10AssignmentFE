@@ -27,7 +27,6 @@ function Login({ setLoggedIn }) {
       console.log("Login successful:", response.data);
       setLoggedIn(true);
       setLoggedInUser(username);
-      // Clear input fields
       setUsername("");
       setPassword("");
     } catch (error) {
