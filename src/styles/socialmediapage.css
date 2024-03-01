@@ -1,0 +1,75 @@
+.social-media-container {
+  padding: 20px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.photo-container {
+  position: relative;
+  border: 3px solid #66f5bf;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 250px;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.photo-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+}
+
+.photo-details p {
+  margin: 5px 0;
+}
+
+.photo-details button {
+  background-color: #66f5bf;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.photo-details button:hover {
+  background-color: #4cd0a1;
+}
+
+.comment-input-container {
+  margin-top: 10px;
+}
+
+.comment-input {
+  width: calc(100% - 30px);
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-submit-button {
+  background-color: #66f5bf;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comment-submit-button:hover {
+  background-color: #4cd0a1;
+}

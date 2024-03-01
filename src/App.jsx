@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import LandingPage from "./components/landingPage";
-import SocialMediaPage from "./components/SocialMediaPage"; // Import SocialMediaPage
+import SocialMediaPage from "./components/SocialMedaPage";
 import { Navigate } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { far } from "@fortawesome/free-regular-svg-icons";
