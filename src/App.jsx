@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import LandingPage from "./components/landingPage";
+import SocialMediaPage from "./components/SocialMedaPage";
 import { Navigate } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { far } from "@fortawesome/free-regular-svg-icons";
@@ -60,6 +61,14 @@ function App() {
                   Signup
                 </Link>
               )}
+              {loggedIn && (
+                <Link
+                  to="/social-media"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  Social Media
+                </Link>
+              )}
             </li>
           </ul>
           {loggedIn && (
@@ -87,6 +96,10 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
           <Route path="/signup" element={<Signup />} />
+          <Route
+            path="/social-media"
+            element={loggedIn ? <SocialMediaPage /> : <Navigate to="/login" />}
+          />
           {!loggedIn && <Route path="*" element={<Navigate to="/login" />} />}
         </Routes>
       </div>
